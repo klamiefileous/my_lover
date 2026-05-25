@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人项目展示 | GitHub Pages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">项目展示 / GitHub Pages</p>
+        <h1>我的技术项目组合</h1>
+        <p class="hero-copy">
+          这是一个适合 HR 快速浏览的静态展示页，展示我在数据爬取、自动化、LLM 分析与后端服务方面的核心项目。
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">查看项目</a>
+          <a class="btn btn-secondary" href="#about">关于我</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" id="about">
+        <div class="section-head">
+          <span class="section-label">关于我</span>
+          <h2>多维项目展示，突出落地能力</h2>
+        </div>
+        <div class="intro-grid">
+          <div class="intro-card">
+            <h3>技术方向</h3>
+            <p>爬虫与数据管道、FastAPI 后端、LLM 与文本分析、浏览器自动化、Playwright / Ollama、Supabase 等。</p>
+          </div>
+          <div class="intro-card">
+            <h3>项目重点</h3>
+            <p>展示商业场景、系统架构、功能实现、数据处理与自动化部署思路，便于 HR 了解我的技术深度。</p>
+          </div>
+          <div class="intro-card">
+            <h3>页面用途</h3>
+            <p>作为 GitHub Pages 主页或仓库展示页面，可直接映射到 `index.html`，方便面试官快速访问。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section-head">
+          <span class="section-label">核心项目</span>
+          <h2>推荐展示的三个项目</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">数据爬取与线索生成</span>
+            <h3>BBQ / Catering Lead Generation System</h3>
+          </div>
+          <p>一个面向商家线索生成的自动化管道，组合 Serper 搜索、Google Maps/Facebook 页面解析、数据去重与 Supabase 存储。</p>
+          <ul>
+            <li>周定时任务抓取、关键字生成、结果解析、商机线索存储</li>
+            <li>FastAPI 提供 `GET /leads`、`GET /stats` 等浏览接口</li>
+            <li>支持 Supabase 持久化与后端去重逻辑</li>
+          </ul>
+          <div class="project-links">
+            <a class="link-button" href="#">仓库链接（请替换）</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">YouTube 评论分析</span>
+            <h3>YouTube Pain Point Pipeline</h3>
+          </div>
+          <p>基于关键字抓取候选视频、评论采集与 LLM 过滤，最终生成痛点分析与商业输出建议。</p>
+          <ul>
+            <li>自动筛选候选视频、Top/Latest/痛点评论采样</li>
+            <li>评论分类、信息价值过滤、批次分析与最终报告</li>
+            <li>可导出 CSV，并支持 Supabase 持久化</li>
+          </ul>
+          <div class="project-links">
+            <a class="link-button" href="#">仓库链接（请替换）</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">浏览器自动化 Demo</span>
+            <h3>Web UI 自动化初代 Demo</h3>
+          </div>
+          <p>浏览器自动化与 Web UI 结合的实验性项目，适合作为扩展展示方向，以“正在迭代”的形式呈现前端与自动化能力。</p>
+          <ul>
+            <li>Gradio / Web UI 展示、浏览器自动化交互</li>
+            <li>支持自定义浏览器与会话复用</li>
+            <li>适合展示自动化思路与产品化演进方向</li>
+          </ul>
+          <div class="project-links">
+            <a class="link-button" href="#">仓库链接（请替换）</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="deploy" id="deploy">
+        <div class="section-head">
+          <span class="section-label">部署说明</span>
+          <h2>将此页面部署到 GitHub Pages</h2>
+        </div>
+        <ol class="deploy-steps">
+          <li>将 `index.html` 与 `style.css` 上传到 GitHub 仓库根目录，或放入 `docs/` 目录。</li>
+          <li>进入仓库设置：Settings → Pages，选择 `main` 分支和 `root` 或 `docs/` 目录。</li>
+          <li>保存后等待几分钟，即可生成 GitHub Pages 地址。</li>
+          <li>在项目卡片中替换成真实 GitHub 仓库地址。</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>如果你需要，我还可以继续帮你把这套页面改成 `docs/` 结构、写成 Jekyll 模板，或添加项目截图和详细页面。</p>
+    </footer>
+  </div>
+</body>
+</html>
